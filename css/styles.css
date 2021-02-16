@@ -1,0 +1,135 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+a{
+    color: lightslategray;
+}
+.colored-sec{
+    background-color: darkseagreen;
+}
+p{
+    color: rgb(5, 49, 78);
+}
+h3{
+    color: lightslategray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4{
+        text-align: center; 
+        font-size: 3rem;
+        font-style: italic; 
+        color:rgb(196, 4, 4); 
+        animation: animate 2s linear infinite; 
+        font-family: 'Bebas Neue', cursive;
+}  
+       
+@keyframes animate{ 
+    0%{ 
+        opacity: 0.2; 
+    } 
+    50%{ 
+        opacity: 1; 
+    } 
+    100%{ 
+        opacity: 0; 
+    } 
+}
+.icon {
+    color:darkseagreen;
+    margin-bottom: 1rem;
+ }
+ .icon:hover {
+     color: rgb(3, 146, 115);
+ }
+ .social-icon{
+     align-self: center;
+ }
+#title{
+    font-size: 15px;
+}
+.navbar-brand{
+    font-family: 'Maiden Orange', cursive;
+    font-size: 30px;
+}
+/* Features Section */
+#features {
+    position: relative;
+    padding-top: 3%;
+}
+  
+.feature-title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+  
+.feature-box {
+    padding: 2%;
+    text-align: center;
+}
+/* Trending Section */
+.trending, .img1, .img3{
+    position: relative;
+    animation: mymove 5s infinite;
+}
+.img1 {animation-timing-function: ease;}
+.img2 {animation-timing-function: ease-in;}
+.img3 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 20px;}
+    to {left: 180px;}
+}
+
+.cardItems{
+    padding: 5% 6%;
+    background-color: rgb(3, 146, 115);
+    margin: 2% 2%;
+    height: auto;
+}
+.card{
+    padding: 5% 12%;
+    margin: 2% 2%;
+}
+.card:hover{
+    padding: 2% 2%;
+    background-color: burlywood;
+}
+.white-section{
+    margin: 0 auto;
+    padding: 5% 7%;
+}
+.white-section-nav{
+    width: 100%;
+    height: auto;
+    background-color:rgb(203, 205, 207);
+}
+#footer{
+    color: lightslategray;
+}
+/* clothing page */
+.cloths{
+    background-color:rgb(252, 190, 167) ;
+    padding: 5% 6%;
+    margin: 2% 2%;
+    height: auto;
+}
+.card2{
+    padding: 7% 15%;
+    margin: 2% 2%;
+}
+.card2 .img-top {
+    display: none;
+}
+.card2:hover .img-top {
+    display: inline;
+}
+.card2:hover .img-shop {
+    display: none;
+}
+.card2-body{
+    color: lightslategray;
+    background-image: -moz-linear-gradient(right,cyan,blue);
+}
+
+
