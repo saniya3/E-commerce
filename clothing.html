@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="stylesheet" href="css/styles3.css">
 
     <!--CSS -->
@@ -22,35 +23,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>  
-
+    <script>
+       $('a').click(function(e) 
+       {
+         e.preventDefault(); 
+         window.open("/biba-salwar-suit-set","_self");
+       });
+    </script>
   </head>
   <body>
-    <div class="form-popup" id="myForm">
-      <form action="" class="form-container">
-        <h1>Login</h1>
-        <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Enter Email" name="email" required>
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-        <button type="submit" class="btn">Login</button>
-        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
-    </div>
     <section class="colored-sec" id="title">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-dark">
-              <a class="navbar-brand" href="index.html">Krash IT</a>
+              <a class="navbar-brand" href="/">Krash IT</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                          <a class="nav-link" href="">Home</a>
+                          <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="#shop">Shop</a>
+                        <a class="nav-link" href="#shop">Shop</a>
                     </li>
                     <div class="dropdown show">
                       <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
@@ -59,11 +54,12 @@
                         <a class="dropdown-item" href="">TVs and aplliances</a>
                         <a class="dropdown-item" href="">Home & Furniture</a>
                         <a class="dropdown-item" href="">Books</a>
-                        <a class="dropdown-item" href="">Clothing</a>
+                        <a class="dropdown-item" href="clothing">Clothing</a>
                       </div>
+                      </a>
                     </div>
                     <li class="nav-item">
-                      <a class="nav-link" href="register.html">Register</a>
+                      <a class="nav-link" href="register">Register</a>
                     </li>
                     <li>
                       <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i></a>
@@ -75,9 +71,9 @@
     </section>
     <section class="white-section-nav">
       <div class="navbar navbar-inverse navbar-static-top" role="navigation">	
-          <a class="nav-link" href="clothing.html">Clothing</a>
+          <a class="nav-link" href ="clothing">Clothing</a>
           <a class="nav-link" href="">Electronics</a></li>
-          <a class="nav-link" href="">Mobiles</a>
+          <a class="nav-link" href="mobiles">Mobiles</a>
           <a class="nav-link" href="">Best Sellers</a>
           <form class="navbar-form" role="search">
           <div class="input-group">
@@ -90,103 +86,247 @@
           </div>
       </div>
     </section>
-
     <section class="cloths">
         <div class="row">
-             <div class="col col-md-3 sm-6">
-             <a href="#">
+             <div class="col-md-3">
+             <div class="container">
+             <a href="/biba-salwar-suit-set">
              <div class="card2">
-                 <img class="img-shop" src="images/cl1.jpg" height="100%" width="80%">
-                 <img class="img-top" src="images/cl11.jpg" height="100%" width="80%">
+                 <img class="img-shop main-image" src="images/cl1.jpg" width="100%">
+                 <img class="img-top main-image" src="images/cl11.jpg" width="100%">
+                 <div class="card2-heading">
+                 BIBA Salwar Suit Set
+                </div>
+                <div class="img-text">
+                  <div class="text">  View More</div>
+              </div>
+             </a>
                  <div class="card2-body">
-                  BIBA Salwar Suit Set
+                    ₹ 1,907.00
+                    <hr>
+                    <i class="p-icon fas fa-heart fa-2x"></i>
+                    <i class="p-icon fas fa-shopping-cart fa-2x"></i>
                  </div>
              </div>
-             </a>
-             </div>
-             <div class="col col-md-3 sm-6">
-             <a href="#">
-             <div class="card2">
-                <img class="img-shop" src="images/cl2.jpg" height="100%" width="80%">
-                <img class="img-top" src="images/cl21.jpg" height="100%" width="80%">
-                <div class="card2-body">
-                  W Salwar Suit Set
-                </div>
-             </div>
-             </a>
-             </div>
-             <div class="col col-md-3 sm-6">
-              <a href="#">
-              <div class="card2">
-                <img class="img-shop" src="images/cl5.jpg" height="100%" width="80%">
-                <img class="img-top" src="images/cl51.jpg" height="100%" width="80%">
-                <div class="card2-body">
-                  Aurelia Salwar Suit Set
-                </div>
-              </div>
-              </a>
-              </div>
-              <div class="col col-md-3 sm-6">
-                <a href="#">
-                    <div class="card2">
-                        <img class="img-shop" src="images/cl8.jpg" height="100%" width="80%">
-                        <img class="img-top" src="images/cl81.jpg" height="100%" width="80%">
-                        <div class="card2-body">
-                          Rayon Straight Salwar Suit Set
-                        </div>
-                    </div>
-                </a>
-              </div>
-         </div>
-         <div class="row">
-         <div class="col col-md-3 sm-6"> 
-         <a href="#">
-         <div class="card2">
-              <img class="img-shop" src="images/cl3.jpg" height="100%" width="80%">
-              <img class="img-top" src="images/cl31.jpg" height="100%" width="80%">
-              <div class="card2-body">
-                Taffeta Silk Semi-Stitched Lehenga choli
-              </div>
-         </div>
-         </a>
-         </div>
-         <div class="col col-md-3 sm-6">
-         <a href="#">
-         <div class="card2">
-            <img class="img-shop" src="images/cl4.jpg" height="200px" width="80%">
-            <img class="img-top" src="images/cl41.jpg" height="200px" width="80%">
-            <div class="card2-body">
-              Velvet Lehenga Choli
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="container">
+            <a href="">
+            <div class="card2">
+              <img class="img-shop main-image" src="images/cl2.jpg" width="100%">
+              <img class="img-top main-image" src="images/cl21.jpg" width="100%">
+                <div class="card2-heading">
+                  W Salwar Suit Set
+               </div>
+               <div class="img-text">
+                 <div class="text">View More</div>
+               </div>
+            </a>
+                <div class="card2-body">
+                   ₹ 1,907.00
+                   <hr>
+                   <i class="p-icon fas fa-heart fa-2x"></i>
+                   <i class="p-icon fas fa-shopping-cart fa-2x"></i>
+                </div>
+            </div>
+           </div>
          </div>
-         </a>
-         </div>
-          <div class="col col-md-3 sm-6">
-          <a href="#">
+         <div class="col-md-3">
+          <div class="container">
+          <a href="">
           <div class="card2">
-                <img class="img-shop" src="images/cl6.jpg" height="200px" width="80%">
-                <img class="img-top" src="images/cl61.jpg" height="200px" width="80%">
-                <div class="card2-body">
-                  Faux Georgette set
-                </div>
-          </div>
-          </a>
-          </div>
-          <div class="col col-md-3 sm-6">
-          <a href="#">
-              <div class="card2">
-                <img class="img-shop" src="images/cl9.jpg" height="200px" width="80%">
-                <img class="img-top" src="images/cl91.jpg" height="200px" width="80%">
-                <div class="card2-body">
-                  Net Satin Blend Stone Work Semi-Stitched lehenga choli
-                </div>
+            <img class="img-shop main-image" src="images/cl5.jpg" width="100%">
+            <img class="img-top main-image" src="images/cl51.jpg" width="100%">
+              <div class="card2-heading">
+                Aurelia Salwar Suit Set
               </div>
+              <div class="img-text">
+               <div class="text">  View More</div>
+             </div>
           </a>
+              <div class="card2-body">
+                 ₹ 1,907.00
+                 <hr>
+                 <i class="p-icon fas fa-heart fa-2x"></i>
+                 <i class="p-icon fas fa-shopping-cart fa-2x"></i>
+              </div>
           </div>
-            
+         </div>
+         </div>
+         <div class="col-md-3">
+          <div class="container">
+          <a href="">
+          <div class="card2">
+            <img class="img-shop main-image" src="images/cl8.jpg" width="100%">
+            <img class="img-top main-image" src="images/cl81.jpg" width="100%">
+              <div class="card2-heading">
+                Rayon Salwar Suit Set
+              </div>
+              <div class="img-text">
+               <div class="text">  View More</div>
+             </div>
+          </a>
+              <div class="card2-body">
+                 ₹ 1,907.00
+                 <hr>
+                 <i class="p-icon fas fa-heart fa-2x"></i>
+                 <i class="p-icon fas fa-shopping-cart fa-2x"></i>
+              </div>
+          </div>
+         </div>
+         </div>
+         </div>
+         <br>
+         <div class="row">
+         <div class="col-md-3">
+            <div class="container">
+            <a href="">
+            <div class="card2">
+              <img class="img-shop main-image" src="images/cl3.jpg" width="100%">
+              <img class="img-top main-image" src="images/cl31.jpg" width="90%">
+                <div class="card2-heading">
+                  Taffeta Silk Lehenga choli
+                </div>
+                <div class="img-text">
+                 <div class="text">  View More</div>
+               </div>
+             </a>
+                <div class="card2-body">
+                   ₹ 1,907.00
+                   <hr>
+                   <i class="p-icon fas fa-heart fa-2x"></i>
+                   <i class="p-icon fas fa-shopping-cart fa-2x"></i>
+                </div>
+            </div>
+           </div>
+         </div>
+         <div class="col-md-3">
+          <div class="container">
+          <a href="">
+          <div class="card2">
+            <img class="img-shop main-image" src="images/cl4.jpg" width="110%">
+            <img class="img-top main-image" src="images/cl41.jpg" width="100%">
+              <div class="card2-heading">
+                Velvet Lehenga Choli
+              </div>
+              <div class="img-text">
+               <div class="text">  View More</div>
+            </div>
+          </a>
+            <div class="card2-body">
+                 ₹ 1,907.00
+                 <hr>
+                 <i class="p-icon fas fa-heart fa-2x"></i>
+                 <i class="p-icon fas fa-shopping-cart fa-2x"></i>
+             </div>
+          </div>
+         </div>
+       </div>
+       <div class="col-md-3">
+       <div class="container">
+       <a href="/biba-salwar-suit-set">
+        <div class="card2">
+          <img class="img-shop main-image" src="images/cl6.jpg" width="90%">
+          <img class="img-top main-image" src="images/cl61.jpg" width="100%">
+            <div class="card2-heading">
+              Faux Georgette set
+            </div>
+            <div class="img-text">
+             <div class="text">  View More</div>
+           </div>
+        </a>
+            <div class="card2-body">
+               ₹ 1,907.00
+               <hr>
+               <i class="p-icon fas fa-heart fa-2x"></i>
+               <i class="p-icon fas fa-shopping-cart fa-2x"></i>
+            </div>
         </div>
+       </div>
+     </div>
+     <div class="col-md-3">
+      <div class="container">
+      <a href="">
+      <div class="card2">
+        <img class="img-shop main-image" src="images/cl9.jpg" width="100%">
+        <img class="img-top main-image" src="images/cl91.jpg" width="100%">
+          <div class="card2-heading">
+            Net Satin lehenga choli
+          </div>
+          <div class="img-text">
+           <div class="text"> View More</div>
+         </div>
+      </a>
+          <div class="card2-body">
+             ₹ 1,907.00
+             <hr>
+             <i class="p-icon fas fa-heart fa-2x"></i>
+             <i class="p-icon fas fa-shopping-cart fa-2x"></i>
+          </div>
+      </div>
+     </div>
+   </div>
    </section>
-      
-    
+      <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="" class="text-dark">Home</a>
+                </li>
+                <li>
+                  <a href="#shop" class="text-dark">Shop</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#help" class="text-dark">Help</a>
+                </li>
+                <li>
+                  <a href="#faq" class="text-dark">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+              <h5>Contact Us</h5>
+              <i class="icon social-icon fas fa-envelope"></i>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="mailto:www.KrashITservices.com" class="text-dark">www.KrashITservices.com</a>
+                </li>
+                <li>
+                  9760967225
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+              <h5>Connect with Us</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="icon social-icon fab fa-facebook-f"></i>
+                </li>
+                <li>
+                  <i class="icon social-icon fab fa-instagram"></i>
+                </li>
+                <li>
+                  <i class="icon social-icon fab fa-linkedin"></i>
+                </li>
+              </ul>
+            </div>
+            </div>
+            </div>
+          </footer>
+          <br>
+      <center>
+      <footer id="footer">
+        <div class="container-fluid">
+            <p>© Krash IT 2021</p>
+        </div>
+      </footer>
+    </center>
 </body>
 </html>

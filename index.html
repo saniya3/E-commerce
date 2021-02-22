@@ -22,10 +22,16 @@
     <!--Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
-    <script src="app.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 </head>
-
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+} 
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
   <body>
     <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
@@ -43,7 +49,7 @@
               <nav class="navbar navbar-expand-md navbar-dark">
                 <a class="navbar-brand" href="">Krash IT</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-                    <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
@@ -60,11 +66,11 @@
                           <a class="dropdown-item" href="">TVs and aplliances</a>
                           <a class="dropdown-item" href="">Home & Furniture</a>
                           <a class="dropdown-item" href="">Books</a>
-                          <a class="dropdown-item" href="">Clothing</a>
+                          <a class="dropdown-item" href="clothing">Clothing</a>
                         </div>
                       </div>
                       <li class="nav-item">
-                        <a class="nav-link" href="register.html">Register</a>
+                        <a class="nav-link" href="register">Register</a>
                       </li>
                       <li>
                         <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i></a>
@@ -76,10 +82,10 @@
       </section>
       <section class="white-section-nav">
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">	
-            <a class="nav-link" href="clothing.html">Clothing</a>
-            <a class="nav-link" href="">Electronics</a></li>
-            <a class="nav-link" href="">Mobiles</a>
-            <a class="nav-link" href="">Best Sellers</a>
+            <a class="nav-link" href="clothing">Clothing</a>
+            <a class="nav-link" href="electronics">Electronics</a></li>
+            <a class="nav-link" href="mobiles">Mobiles</a>
+            <a class="nav-link" href="best">Best Sellers</a>
             <form class="navbar-form" role="search">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Find a product" name="srch-term" id="srch-term">
@@ -171,90 +177,87 @@
       </div>
     </section>
     
-      <h4>Trending Now!</h4>
-   
-      <section class="trending">
+    <h4>Trending Now!</h4>
+  
+    <section class="trending">
+      <div class="row">
+          <img src="images/img1.jpg" class="img1" width="45%" height="18%">
+        </div>
         <div class="row">
-           <img src="images/img1.jpg" class="img1" width="45%" height="18%">
-         </div>
-         <div class="row">
-           <img src="images/img2.jpg" class="img2" width="35%" height="15%">
+          <img src="images/img2.jpg" class="img2" width="35%" height="15%">
+        </div>
+        <div class="row">
+          <img src="images/m.jpg" class="img3" width="55%" height="18%">
+        </div>
+    </section>
+    <br>
+  
+    <section class="cardItems" id="sign-in">
+      <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. We offer everything you can possibly imagine.</p>
+    </section> 
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="" class="text-dark">Home</a>
+              </li>
+              <li>
+                <a href="#shop" class="text-dark">Shop</a>
+              </li>
+            </ul>
           </div>
-         <div class="row">
-            <img src="images/m.jpg" class="img3" width="55%" height="18%">
-          </div>
-      </section>
-      <br>
-      
-      <section class="cardItems" id="sign-in">
-        <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. We offer everything you can possibly imagine.</p>
-        <br>
-        <button type="button" class="btn btn-primary open-button" onclick="openForm();">Sign In</button></a>
-      </section>
-      <br>
-      <footer class="bg-light text-center text-lg-start">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="" class="text-dark">Home</a>
-                </li>
-                <li>
-                  <a href="#shop" class="text-dark">Shop</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
+          <!--Grid column-->
 
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#help" class="text-dark">Help</a>
-                </li>
-                <li>
-                  <a href="#faq" class="text-dark">FAQ</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-              <h5>Contact Us</h5>
-              <i class="icon social-icon fas fa-envelope"></i>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="mailto:www.KrashITservices.com" class="text-dark">www.KrashITservices.com</a>
-                </li>
-                <li>
-                  9760967225
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-              <h5>Connect with Us</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="icon social-icon fab fa-facebook-f"></i>
-                </li>
-                <li>
-                  <i class="icon social-icon fab fa-instagram"></i>
-                </li>
-                <li>
-                  <i class="icon social-icon fab fa-linkedin"></i>
-                </li>
-              </ul>
-            </div>
-            </div>
-            </div>
-          </footer>
-          <br>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#help" class="text-dark">Help</a>
+              </li>
+              <li>
+                <a href="#faq" class="text-dark">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+            <h5>Contact Us</h5>
+            <i class="icon social-icon fas fa-envelope"></i>
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:www.KrashITservices.com" class="text-dark">www.KrashITservices.com</a>
+              </li>
+              <li>
+                9760967225
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+            <h5>Connect with Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="icon social-icon fab fa-facebook-f"></i>
+              </li>
+              <li>
+                <i class="icon social-icon fab fa-instagram"></i>
+              </li>
+              <li>
+                <i class="icon social-icon fab fa-linkedin"></i>
+              </li>
+            </ul>
+          </div>
+          </div>
+          </div>
+        </footer>
+        <br>
       <center>
       <footer id="footer">
         <div class="container-fluid">
@@ -262,5 +265,6 @@
         </div>
       </footer>
     </center>
+    <button type="button" id="open" class="btn btn-primary open-button" onclick="openForm()">Sign In</button>
   </body>
 </html>
