@@ -33,6 +33,10 @@ app.get("/biba-salwar-suit-set", function(req,res){
     res.sendFile(__dirname+"/biba-salwar-suit-set.html");
 });
 
+app.get("/register", function(req,res){
+    res.sendFile(__dirname+"/register.html");
+});
+
 app.post("/",function(req,res){
   
 });

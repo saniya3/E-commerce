@@ -52,6 +52,13 @@ h4{
     font-family: 'Maiden Orange', cursive;
     font-size: 30px;
 }
+.navbar-toggler-icon{
+    align-self: right;
+}
+.logo{
+    width: 30%;
+    height: auto;
+}
 /* Features Section */
 #features {
     position: relative;
